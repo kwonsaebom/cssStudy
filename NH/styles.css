@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 400;
+  src: url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot");
+  src: url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.eot?#iefix")
+      format("embedded-opentype"),
+    url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.woff")
+      format("woff"),
+    url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWeb.ttf")
+      format("truetype");
+}
+
+@font-face {
+  font-family: "NanumBarunGothic";
+  font-style: normal;
+  font-weight: 700;
+  src: url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot");
+  src: url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.eot?#iefix")
+      format("embedded-opentype"),
+    url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.woff")
+      format("woff"),
+    url("//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebBold.ttf")
+      format("truetype");
+}
+
+/*Reset*/
+body {
+  margin: unset;
+  padding: unset;
+}
+
+img {
+  margin: unset;
+  padding: unset;
+
+  vertical-align: top;
+}
+
+h3,
+ul,
+a {
+  margin: unset;
+  padding: unset;
+
+  font-size: unset;
+  font-weight: unset;
+  font-style: unset;
+  font-family: unset;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: unset;
+  color: unset;
+}
+/*Variables*/
+:root {
+  font-family: "NanumBarunGothic", sans-serif;
+
+  --color-white: #fff;
+  --color-gray-footer: #f5f5f5;
+  --color-gray-10: #d8d8d8;
+  --color-gray-20: #7c7c7c;
+  --color-gray-30: #484848;
+  --color-black-10: #171717;
+  --color-black-20: #111;
+  --color-primary: #0055a5;
+}
+
+.l_wrapper {
+  max-width: 1280px;
+  box-shadow: inset 0 0 3px black;
+  margin: 0 auto;
+}
+
+.header-bar {
+  padding: 14px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-select {
+  display: flex;
+  gap: 50px;
+}
+
+.select-section {
+  padding: 0 0 0 5px;
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.select-section.language::after {
+  content: "";
+  display: block;
+  width: 1px;
+  height: 14px;
+  background-color: var(--color-gray-10);
+
+  position: absolute;
+  top: 50%;
+  right: -25px;
+  transform: translate(0, -50%);
+}
+
+.select-title {
+  padding-right: 8px;
+}
+
+.select-down {
+}
+
+.banking .select-title {
+  color: var(--color-primary);
+}
+
+.navbar-content {
+  display: flex;
+  align-items: center;
+}
+.nav-items {
+  box-shadow: inset 0 0 3px gold;
+  width: 89.2%;
+
+  font-size: 19px;
+  color: var(--color-black-10);
+  padding: 10px 0 13px;
+
+  display: flex;
+  justify-content: space-between;
+}
+.nav-menu {
+  margin-left: auto;
+}
+.banner {
+  width: 100vw;
+}
+
+.footer {
+  background-color: var(--color-gray-footer);
+  height: 248px;
+}
