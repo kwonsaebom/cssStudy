@@ -40,7 +40,7 @@ img {
 h2,
 h3,
 ul,
-a {
+p {
   margin: unset;
   padding: unset;
 
@@ -63,6 +63,7 @@ a {
   font-family: "NanumBarunGothic", sans-serif;
   font-size: 13pt;
   color: var(--color-gray-40);
+  line-height: 1.45;
 
   --color-white: #fff;
   --color-gray-footer: #f5f5f5;
@@ -73,6 +74,8 @@ a {
   --color-black-10: #171717;
   --color-black-20: #111;
   --color-primary: #0055a5;
+
+  word-break: break-all;
 }
 
 .l_wrapper {
@@ -157,11 +160,11 @@ a {
 }
 
 .card-main {
+  width: 68.8%;
   background-color: white;
   border-radius: 30px;
   padding: 20px;
-
-  flex-basis: 835px;
+  padding-bottom: 60px;
 }
 
 .card-title {
@@ -186,10 +189,6 @@ a {
   margin-top: 15px;
 }
 
-.card-sub {
-  flex-grow: 1;
-}
-
 li:nth-child(1) > p {
   background-color: var(--color-primary);
   margin-bottom: 22px;
@@ -201,14 +200,24 @@ li:nth-child(1) > p {
   color: white;
 }
 
-li:nth-child(2) > p:first-of-type {
-  font-size: 30px;
+li:nth-child(2) > a > p:first-of-type {
+  font-size: 35px;
+  line-height: 1.5;
 }
-li:nth-child(2) > p:last-of-type {
-  font-size: 30px;
+li:nth-child(2) > a > p:last-of-type {
+  font-size: 14px;
+  line-height: 1.75;
+  font-weight: bold;
+  margin: 24px 0;
 }
 
-li:nth-child(3) > p {
+li:nth-child(3) {
+  margin: 14px 0;
+  font-size: 14px;
+}
+
+.card-sub {
+  flex-grow: 1;
 }
 
 .footer {
